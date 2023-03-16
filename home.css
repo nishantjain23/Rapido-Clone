@@ -1,0 +1,825 @@
+/* CSS RESET */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+/* CSS RESET */
+
+/*/////////////////////// pg1 ///////////////////////////*/
+
+body {
+    overflow-x: hidden;
+}
+
+.pg1_img {
+    width: 1000px;
+    height: 700px;
+    background-color: #f9c935;
+    border-radius: 350px;
+    overflow: hidden;
+    /* to avoid the scroll bar*/
+}
+
+.pg1_bg_img {
+    height: 100vh;
+    position: absolute;
+    top: -160px;
+    right: -200px;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.pg1_bg_img img {
+    width: 1050px;
+    transform: rotate(45deg);
+    margin: 50px -270px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    /*It gives even space b/w the elements*/
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: white; */
+    z-index: 100;
+}
+
+.navbar img {
+    width: 100px;
+}
+
+.navbar ul {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-left: 180px;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    padding-bottom: 6px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Line animation */
+.navbar ul li ::before {
+    content: "";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transition: all 0.5s;
+    background-color: black;
+}
+
+.navbar ul li :hover::before {
+    width: 100%;
+}
+
+/* Change nav col */
+.change_nav_col {
+    background-color: white;
+}
+
+.navbar button {
+    padding: 10px 20px;
+    border-radius: 20px 15px 5px 20px;
+    font-size: 16px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+/* Main Text */
+.pg1_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 700px;
+    margin-left: 180px;
+    margin-top: 30px;
+}
+
+.pg1_text h1 {
+    font-size: 50px;
+    font-weight: 100;
+    color: #2c2b2b;
+}
+
+.pg1_text p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #525050;
+    line-height: 31px;
+    margin-top: 30px;
+}
+
+.pg1_text_btn {
+    margin-top: 30px;
+}
+
+.pg1_text_btn button {
+    padding: 15px 20px;
+    border-radius: 25px 25px 25px 5px;
+    font-size: 17px;
+    background-color: #f9c935;
+    cursor: pointer;
+    margin-right: 20px;
+    border: none;
+    color: black;
+}
+
+#btn2 {
+    background-color: black;
+    color: white;
+    border-radius: 25px 25px 5px 25px;
+}
+
+/*/////////////////////// End of pg1 ///////////////////////////*/
+
+/*/////////////////////// pg2///////////////////////////*/
+
+.pg2 {
+    width: 100%;
+    height: 105vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.pg2_bg {
+    background-color: #fcf7de;
+    width: 850px;
+    height: 620px;
+    border-radius: 250px;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 90px;
+    left: -100px;
+}
+
+.pg2_img {
+    transform: rotate(15deg);
+    height: 850px;
+    width: 475px;
+    margin-left: 300px;
+    margin-top: -100px;
+    display: flex;
+}
+
+.pg2_img1 {
+    height: 850px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 12px;
+}
+
+#radius {
+    border-radius: 100px 100px 0px 100px;
+}
+
+.pg2_img1 h1 {
+    height: 180px;
+    width: 50px;
+    background-color: #f9c935;
+    border-radius: 20px 0px 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.pg2_img2 img {
+    width: 270px;
+    border-radius: 0px 80px 0px 80px;
+}
+
+.pg2_img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pg2_img2 h1 {
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px 25px 25px 0px;
+    margin-bottom: 50px;
+}
+
+.pg2_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 800px;
+    margin-top: 250px;
+}
+
+.pg2_text h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 100px;
+    padding-bottom: 15px;
+}
+
+.pg2_text h1::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #f9c935;
+    position: absolute;
+    bottom: 0px;
+}
+
+.pg2_text p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #525050;
+    line-height: 31px;
+    margin-top: 30px;
+}
+
+.pg2_text_btn {
+    margin-top: 30px;
+}
+
+.pg2_text_btn button {
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 25px 25px 25px 5px;
+    width: 250px;
+    height: 70px;
+    background-color: #f9c935;
+    font-weight: bold;
+    color: black;
+    border: none;
+    font-size: 17px;
+}
+
+/*/////////////////////// End of pg2///////////////////////////*/
+
+/*/////////////////////// pg3///////////////////////////*/
+
+.pg3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg3_bg {
+    text-align: center;
+    background-color: #fcf7de;
+    width: 1100px;
+    height: 600px;
+    border-radius: 300px;
+}
+
+.pg3_bg h1 {
+    margin-top: 70px;
+    position: relative;
+    /*We need to give this position relative bcoz then only the yellow line will be visible below it*/
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.pg3_bg h1::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #f9c935;
+    position: absolute;
+    /*Same like above this is also necessary to give its position*/
+    bottom: 0px;
+    margin-left: 60px;
+}
+
+.pg3_bg p {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #525050;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.pg3_img {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pg3_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    flex-direction: column;
+}
+
+.pg3_images img {
+    width: 60px;
+}
+
+.pg3_images p {
+    color: black;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.pg3_images h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*/////////////////////// End of pg3///////////////////////////*/
+
+/*/////////////////////// pg4///////////////////////////*/
+
+.pg4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pg4_text h1 {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.pg4_text h1::before {
+    content: "";
+    height: 3px;
+    width: 70px;
+    position: absolute;
+    background-color: #f9c935;
+    bottom: 0px;
+    margin: 0px 145px;
+}
+
+.pg4_button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg4_button button {
+    cursor: pointer;
+    padding: 20px 80px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#pg4_btn1 {
+    background-color: #f9c935;
+    border-radius: 25px 0px 0px 5px;
+    border: 2px solid #f9c935;
+}
+
+#pg4_btn2 {
+    background-color: white;
+    border-radius: 0px 5px 25px 0px;
+    border: 2px solid #0000001a;
+}
+
+.pg4_container {
+    position: relative;
+}
+
+.pg4_box {
+    /* height: auto; */
+    margin-top: 50px;
+    height: 500px;
+}
+
+.pg4_img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pg4_images {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* flex-direction: column; */
+    margin: 40px 0px;
+    width: 100%;
+}
+
+.pg4_images img {
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.pg4_images h2 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pg4_images p {
+    color: #525050;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+#pg4_two_hide {
+    display: none;
+}
+
+/*/////////////////////// End of pg4///////////////////////////*/
+
+/*/////////////////////// pg5///////////////////////////*/
+
+.pg5 {
+    width: 100%;
+    height: 100vh;
+}
+
+.pg5_review {
+    position: absolute;
+    /*This is necesssary bcoz of the 1st image position */
+}
+
+.pg5_bg {
+    width: 1300px;
+    background-color: #f6f5fa;
+    height: 700px;
+    border-radius: 0px 230px 50px 0px;
+    z-index: -2;
+}
+
+.pg5_1st_img img {
+    position: absolute;
+    /* This one */
+    top: -90px;
+    margin-left: 130px;
+    width: 220px;
+}
+
+.pg5_text {
+    /* background-color: aqua; */
+    width: 1000px;
+    height: 500px;
+    top: 135px;
+    right: 0;
+    position: absolute;
+}
+
+.pg5_text h1 {
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.pg5_text h1::before {
+    content: "";
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    background-color: #f9c935;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: 0 auto;
+}
+
+.pg5_button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg5_button button {
+    cursor: pointer;
+    padding: 20px 80px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#pg5_btn1 {
+    background-color: #f9c935;
+    border-radius: 25px 0px 0px 5px;
+    border: 2px solid #f9c935;
+}
+
+#pg5_btn2 {
+    background-color: white;
+    border-radius: 0px 5px 25px 0px;
+    border: 2px solid #0000001a;
+}
+
+/* Swiper */
+.swiper {
+    width: 1000px;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    background-color: #f6f5fa;
+}
+
+.card {
+    background-color: white;
+    width: 99%;
+    display: flex;
+    height: 240px;
+    padding: 30px;
+    border-radius: 40px 40px 10px 40px;
+    box-shadow: 0 0 10px rgb(216, 215, 215);
+}
+
+.card img {
+    width: 66px;
+    height: 66px;
+    border: 2px solid white;
+    border-radius: 20px 20px 8px 20px;
+    box-shadow: -6px -6px 0px #f9c935;
+}
+
+.card_details {
+    text-align: start;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.card_details p {
+    font-weight: 400;
+    color: #303030;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.card_details h3 {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.card_details span {
+    font-size: 15px;
+}
+
+/*/////////////////////// End of pg5///////////////////////////*/
+
+/*/////////////////////// pg6///////////////////////////*/
+
+.pg6 {
+    width: 100%;
+    height: 105vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.pg6_bg {
+    background-color: #fcf7de;
+    width: 850px;
+    height: 620px;
+    border-radius: 250px;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 90px;
+    left: -100px;
+    z-index: -1;
+    margin-left: 970px;
+}
+
+.pg6_img {
+    transform: rotate(-15deg);
+    height: 850px;
+    width: 475px;
+    margin-left: 100px;
+    margin-top: -100px;
+    display: flex;
+}
+
+.pg6_img1 {
+    height: 850px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 12px;
+}
+
+#radius {
+    border-radius: 100px 100px 0px 100px;
+}
+
+.pg6_img1 h1 {
+    height: 180px;
+    width: 50px;
+    background-color: #f9c935;
+    border-radius: 20px 0px 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.pg6_img2 img {
+    width: 270px;
+    border-radius: 0px 150px 150px 150px;
+}
+
+.pg6_img2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.pg6_img2 h1 {
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px 25px 25px 0px;
+    margin-bottom: 50px;
+}
+
+.pg6_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 250px;
+}
+
+.pg6_text h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 100px;
+    padding-bottom: 15px;
+}
+
+.pg6_text h1::before {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #f9c935;
+    position: absolute;
+    bottom: 0px;
+}
+
+.pg6_text p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #525050;
+    line-height: 31px;
+    margin-top: 30px;
+}
+
+/*/////////////////////// End of pg6///////////////////////////*/
+
+/*/////////////////////// Download///////////////////////////*/
+
+.black_screen {
+    width: 100%;
+    height: 600vh;
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0%;
+    z-index: 100;
+}
+
+.main_div {
+    position: relative;
+}
+
+.app {
+    width: 900px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px grey;
+    /* Here I cant give the margin auto bcoz the pop-up will not be in the centre of the screen when tapped on the download app btn */
+    margin-top: 275px;
+    margin-left: 375px;
+    /* Now to show the pop-up anywhere int he screen when clicked on the downlad app button we need to give its position fixed*/
+    position: fixed;
+    display: flex;
+    background-color: white;
+}
+
+.both_apps {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.both_apps h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.both_apps img {
+    width: 90px;
+    margin-top: 30px;
+}
+
+.both_apps p {
+    color: #303030;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 25px;
+    display: block;
+}
+
+.line {
+    border-right: 2px solid rgb(101, 99, 99);
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.app_img {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.both_img {
+    text-align: center;
+}
+
+.both_img img {
+    width: 100px;
+}
+
+.app span {
+    background-color: #ebebeb;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/*/////////////////////// End of Download///////////////////////////*/
