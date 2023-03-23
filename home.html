@@ -176,66 +176,98 @@
                     <div class="pg5_text">
                         <h1>Straight from the Customer's heart</h1>
                         <div class="pg5_button">
-                            <button id="pg5_btn1" onclick="btnone()">Customers</button>
-                            <button id="pg5_btn2" onclick="bttwo()">Captains</button>
+                            <button id="pg5_btn1" onclick="show()">Customers</button>
+                            <button id="pg5_btn2" onclick="hide()">Captains</button>
                         </div>
 
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="image/0b45a8b2-4235-49ed-826e-3881e8b5ca91.png">
-                                        <div class="card_details">
-                                            <p>Thanks to Rapido, my first lecture is<br>never missed. My captain arrives
-                                                in 2-3<br>
-                                                mins and zoop we go.</p>
-                                            <h3>Dhiya M</h3>
-                                            <span>Customer</span>
+                        <div id="pg5_customer">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img src="image/0b45a8b2-4235-49ed-826e-3881e8b5ca91.png">
+                                            <div class="card_details">
+                                                <p>Thanks to Rapido, my first lecture is<br>never missed. My captain
+                                                    arrives
+                                                    in 2-3<br>
+                                                    mins and zoop we go.</p>
+                                                <h3>Dhiya M</h3>
+                                                <span>Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img src="image/6c3496e7-3068-4eaf-84c0-a6f104bcbbec.png">
+                                            <div class="card_details">
+                                                <p>Was running late for my appointment<br>and given it was during a peak
+                                                    hour, I<br>did not have to think twice and simply<br>booked my
+                                                    Rapido &
+                                                    reached just in<br>time. </p>
+                                                <h3>Akshay Gaur</h3>
+                                                <span>Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img src="image/00a7ad31-fbab-45c2-8ec7-85c6f9ac18bb.png">
+                                            <div class="card_details">
+                                                <p>It is an amazing app and very safe too to<br>ride with as they have
+                                                    professional and<br>great riders . It is also very feasible
+                                                    and<br>we
+                                                    reach quicker as compared to any<br>other mode of transport</p>
+                                                <h3>Sriram</h3>
+                                                <span>Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <img src="image/cc0de2a5-6981-4119-a00c-77f1c4bebe63.png">
+                                            <div class="card_details">
+                                                <p>Well, I love rapido cuz it's quicker than<br>other apps and they're
+                                                    mostly available<br>anytime. And I don't know how to ride<br>bikes
+                                                    but
+                                                    the app gives me joy to ride on<br>a bike and I get to enjoy
+                                                    Bangalore's
+                                                    weather.</p>
+                                                <h3>Praneet</h3>
+                                                <span>Customer</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="image/6c3496e7-3068-4eaf-84c0-a6f104bcbbec.png">
-                                        <div class="card_details">
-                                            <p>Was running late for my appointment<br>and given it was during a peak
-                                                hour, I<br>did not have to think twice and simply<br>booked my Rapido &
-                                                reached just in<br>time. </p>
-                                            <h3>Akshay Gaur</h3>
-                                            <span>Customer</span>
-                                        </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div id="pg5_captain">
+                            <div class="hide_all_cards">
+                                <div class="card hide_card">
+                                    <img src="image/49e699db-bdfb-4978-97bb-46533d982a1b.png">
+                                    <div class="card_details">
+                                        <p>My account was credited with the<br>amount and wondered who it was. I did
+                                            <br>not expect it but Rapido helped me at<br>the right time. I’m glad that
+                                            support has<br>been extended by Rapido to us.
+                                        </p>
+                                        <h3>Devender Kumar</h3>
+                                        <span>Captain</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="image/00a7ad31-fbab-45c2-8ec7-85c6f9ac18bb.png">
-                                        <div class="card_details">
-                                            <p>It is an amazing app and very safe too to<br>ride with as they have
-                                                professional and<br>great riders . It is also very feasible and<br>we
-                                                reach quicker as compared to any<br>other mode of transport</p>
-                                            <h3>Sriram</h3>
-                                            <span>Customer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="image/cc0de2a5-6981-4119-a00c-77f1c4bebe63.png">
-                                        <div class="card_details">
-                                            <p>Well, I love rapido cuz it's quicker than<br>other apps and they're
-                                                mostly available<br>anytime. And I don't know how to ride<br>bikes but
-                                                the app gives me joy to ride on<br>a bike and I get to enjoy Bangalore's
-                                                weather.</p>
-                                            <h3>Praneet</h3>
-                                            <span>Customer</span>
-                                        </div>
+                                <div class="card hide_card">
+                                    <img src="image/3615fd59-a79c-485a-adb8-63d5d52fac06.png">
+                                    <div class="card_details">
+                                        <p>I am working in Rapido for the last 8<br>months and I would really like to
+                                            thank<br>Rapido, I am differently-abled and<br>Rapido has given me a
+                                            good<br>opportunity to earn more money.</p>
+                                        <h3>Murugan</h3>
+                                        <span>Captain</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -376,6 +408,26 @@
             document.getElementById("pg4_btn1").style.border = "2px solid #0000001a";
             document.getElementById("pg4_btn2").style.backgroundColor = "#f9c935";
             document.getElementById("pg4_btn2").style.border = "2px solid #f9c935";
+        }
+
+        var pg5_customer = document.getElementById("pg5_customer")
+        var pg5_captain = document.getElementById("pg5_captain")
+
+        const show = () => {
+            pg5_customer.style.display = "block"
+            pg5_captain.style.display = "none"
+            document.getElementById("pg5_btn1").style.backgroundColor = "#f9c935";
+            document.getElementById("pg5_btn1").style.border = "2px solid #f9c935";
+            document.getElementById("pg5_btn2").style.backgroundColor = "white";
+            document.getElementById("pg5_btn2").style.border = "2px solid #0000001a";
+        }
+        const hide = () => {
+            pg5_customer.style.display = "none"
+            pg5_captain.style.display = "block"
+            document.getElementById("pg5_btn1").style.backgroundColor = "white";
+            document.getElementById("pg5_btn1").style.border = "2px solid #0000001a";
+            document.getElementById("pg5_btn2").style.backgroundColor = "#f9c935";
+            document.getElementById("pg5_btn2").style.border = "2px solid #f9c935";
         }
 
         // for getting the black screen when tapped on dwnld_app btn
