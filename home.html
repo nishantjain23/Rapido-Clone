@@ -44,7 +44,7 @@
                     operations in more than 100 cities.</p>
                 <div class="pg1_text_btn">
                     <button onclick="dwnld_app()">Download Rapido</button>
-                    <button id="btn2">Sign-up as Driver</button>
+                    <button id="btn2" onclick="signup()">Sign-up as Driver</button>
                 </div>
             </div>
         </div>
@@ -374,6 +374,39 @@
         </div>
     </div>
 
+    <div id="sign_up">
+        <div class="sign_up_btn">
+            <span onclick="signup_close()">x</span>
+            <h1>Become a Captain</h1>
+            <input type="text" placeholder="Enter Full Name">
+            <input type="text" placeholder="Your city">
+            <select class="select_box">
+                <option>How did you find us?</option>
+                <option>Facebook</option>
+                <option>Instagram</option>
+                <option>Google Ad</option>
+                <option>Youtube</option>
+                <option>Friend</option>
+                <option>Poster</option>
+                <option>Banner</option>
+                <option>Cinema</option>
+            </select>
+            <p>Do you have a Driving License?</p>
+            <div class="dl_input">
+                <input type="radio" id="yes" name="DL" tabindex="1">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="DL" tabindex="2">
+                <label for="no">No</label>
+            </div>
+            <div class="dl_input">
+                <input type="text" placeholder="Enter phone number">
+                <button>Get OTP</button>
+            </div>
+            <input type="text" placeholder="Enter OTP">
+            <button>Submit</button>
+        </div>
+    </div>
+
     <script>
         // To change the nav color while scrolling
 
@@ -430,7 +463,7 @@
             document.getElementById("pg5_btn2").style.border = "2px solid #f9c935";
         }
 
-        // for getting the black screen when tapped on dwnld_app btn
+        // for getting the black screen when tapped on dwnld_app and sign_up btn
 
         var download = document.querySelector(".download");
         const dwnld_app = () => {
@@ -443,7 +476,18 @@
         const dwnld_app_close = () => {
             download.classList.remove("black_screen")
             document.querySelector("body").style.overflowY = "scroll";
+        }
 
+        var sign_up = document.getElementById("sign_up");
+        const signup = () => {
+            sign_up.classList.add("black_screen")
+            sign_up.style.display = "block"
+            document.querySelector("body").style.overflowY = "hidden";
+        }
+        const signup_close = () => {
+            sign_up.classList.remove("black_screen")
+            sign_up.style.display = "none"
+            document.querySelector("body").style.overflowY = "scroll";
         }
     </script>
 
